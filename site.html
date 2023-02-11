@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial_scale=1">
+<script>
+   function startQuiz(id, element){
+      document.getElementById(element).style.opacity = '0';
+      window.setTimeout(
+      function removethis(){
+         document.getElementById(element).style.display='none';
+         document.getElementById(id).style.display='block';
+         window.setTimeout(
+            function second(){
+         document.getElementById(id).style.opacity = '1';
+      }, 100);
+      }, 300);
+      
+   }
+   </script>
+</script>
+</head>
+<bodyy>
+<style>
+#main-title{
+margin-top: 20px;
+border-left: 2px solid #000000;
+}
+#main-title:not(:first-child){
+   margin-top: 40px;
+   margin-bottom: 20px;
+}
+#main-title h1{
+margin-left: 20px;
+}
+body{
+padding: 30px;
+}
+*{padding: 0; margin: 0; box-sizing: border-box; font-family: "Montserrat", sans-serif; line-height: 1.7;
+}
+h1{
+font-size: 25px;
+}
+h2{
+font-size: 18px;
+}
+.image{
+   width: 90%; border-radius: 10px;
+}
+.examples-wrapper{
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, #dd00fe, #8401ff);
+  padding: 1px;
+  border-radius: 5px;
+}
+.explain{margin: 15px 0;}
+ol{margin: 12px 0; list-style: inside;}
+ul{list-style: inside;}
+li:not(:first-child){margin: 25px 0;}
+.examples{background-color: white; padding: 10px; border: 0.5px solid gray; border-radius: 5px;}
+.examples p{margin: 7px 0;}
+.scheme{ border-radius: 10px; padding: 20px; text-align: center; margin-top: 30px; box-shadow: 10px 10px 48px 0px rgba(0,0,0,0.15);
+-webkit-box-shadow: 10px 10px 48px 0px rgba(0,0,0,0.15);
+-moz-box-shadow: 10px 10px 48px 0px rgba(0,0,0,0.15);}
+.scheme p{
+font-size: 17px;
+}
+#Apu>fieldset { border:1px solid #000000; border-radius:5px; margin:1rem auto;padding:7px 4px;background-color:#e9edf5; width:100%; }.qnum{color:#ff0000;} #Apu>fieldset>h3{ margin:0px; margin-bottom:17px; margin-top:6px; font-size:15px; display:inline-block; max-width:80%!important; padding:5px; color:#000000;} #Apu>fieldset>span{ float:right; margin:0px; padding:0; font-size:10px; } .Aanswers { background-color: #cccccc;color:#000000;border:1px solid #0000ff;border-radius:4px; display: block; position: relative; cursor: pointer; padding: 0.55rem 1.05rem; margin: 0.25rem 0.5rem; max-width:99%; } #Apu input[type="radio"],#Apu>button { display: none; } :valid .Acorrect { background-color: rgba(61, 181, 64, 0.6) } :checked + .Aanswers { color: #ffffff; background-color: #c70000 } :checked + .Acorrect { background-color: #3db540; } :valid { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none } :valid + .Aanswers { pointer-events: none } #Apu{ counter-reset: quiz-score } :checked + .Acorrect { counter-increment: quiz-score } .score:after { content: counter(quiz-score) " Points Out Of " attr(data-question-count) "  !"} #Apu .Apuresult { display: none; } #Apu:valid .Apuresult { display: block;color:#0000ff;font-size:22px;margin-top:8px;text-align:center;}
+.quiz-start{ opacity: 1; transition: all .3s;
+  -wekit-transition: all .3s;
+  -moz-transition: all .3s; padding: 30px; text-align: center; height: 220px; width: 100%; background: rgb(175,84,255);
+background: linear-gradient(90deg, rgba(175,84,255,1) 0%, rgba(120,30,255,1) 100%); border-radius: 15px; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+#Apu2>fieldset { border:1px solid #000000; border-radius:5px; margin:1rem auto;padding:7px 4px;background-color:#e9edf5; width:100%; }.qnum{color:#ff0000;} #Apu2>fieldset>h3{ margin:0px; margin-bottom:17px; margin-top:6px; font-size:15px; display:inline-block; max-width:80%!important; padding:5px; color:#000000;} #Apu2>fieldset>span{ float:right; margin:0px; padding:0; font-size:10px; } .Aaanswers { background-color: #cccccc;color:#000000;border:1px solid #0000ff;border-radius:4px; display: block; position: relative; cursor: pointer; padding: 0.55rem 1.05rem; margin: 0.25rem 0.5rem; max-width:99%; } #Apu2 input[type="radio"],#Apu2>button { display: none; } :valid .Acorrect { background-color: rgba(61, 181, 64, 0.6) } :checked + .Aaanswers { color: #ffffff; background-color: #c70000 } :checked + .Acorrect { background-color: #3db540; } :valid { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none } :valid + .Aaanswers { pointer-events: none } #Apu2{ counter-reset: quiz-score } :checked + .Acorrect { counter-increment: quiz-score } .score:after { content: counter(quiz-score) " Points Out Of " attr(data-question-count) "  !"} #Apu2 .Apu2result { display: none; } #Apu2:valid .Apu2result { display: block;color:#0000ff;font-size:22px;margin-top:8px;text-align:center;}
+</style>
+
+<center><img src="./ps.png" class="image" style="width: 100%"/></center>
+<div id="main-title">
+<h1>Present Simple<h1>
+</div>
+<p class="explain">to prosty w budowie czas teraźniejszy, mający zastosowanie w wielu sytuacjach życia codziennego. Jest on podstawą do sprawnej komnikacji w angielskim, przez co jego znajomość to pewnego rodzaju "must have" dla każdego uczącego się tego języka. </p>
+<h2>Zatem kiedy go używamy?</h2>
+<ol type="1">
+   <li>Aby wyrazić czynności, które się powtarzają, są wykonywane regularnie, np.
+   <center><img src="./ps2.jpg" class="image" style="margin: 15px 0;"/></center>
+   <div class="examples-wrapper">
+	   <div class="examples">
+		 <p>I go to school every day. ► <strong>Chodzę do szkoły każdego dnia.</strong></p>
+		 <p>He visits his grandmother every week. ► <strong>On odwiedza swoją babcię co tydzień.</strong></p>
+	   </div>
+   </div></li>
+   <li>Zjawiska powszechnie znane, stałe, ogólnie uznawane (procesy chemiczne, prawa fizyki, przysłowia itp.), np.
+	<center><img src="./ps3.jpg" class="image" style="margin: 15px 0;"/></center>
+	<div class="examples-wrapper"><div class="examples">
+     <p>Water freezes at zero degrees. ► <strong>Woda zamarza w zeru stopniach.</strong></p>
+     <p>One apple a day keeps the doctor away. ► <strong>Angielskie powiedzenie</strong></p>
+	</div></div>
+   </li>
+   <li>Gdy opisujemy cechy oraz stany ludzi i przedmiotów, np.:
+   <center><img src="./ps4.jpg" class="image" style="margin: 15px 0;" /></center>
+   <div class="examples-wrapper"><div class="examples">
+    <p>She has green eyes and blue hair ► <strong>Ona ma zielone oczy i niebieskie włosy.</p></strong>
+    <p>His car is red. ► <strong>Jego samochód jest czerwony.</p></strong>
+   </div></div>
+   </li>
+   <li>Czynności dziejące się przez dłuższy czas, prawdy ogólne, np.
+   <center><img src="./ps5.jpg" class="image" style="margin: 15px 0;" /></center>
+   <div class="examples-wrapper"><div class="examples">
+    <p>Tom lives in New York. ► <strong>Tom mieszka w Nowym Jorku.</p></strong>
+    <p>He works in a library. ► <strong>On pracuje w bibliotece.</p></strong>
+   </div></div>
+   </li>
+   <li>Gdy streszczamy i opisujemy książki, filmy itp, np.
+   <center><img src="./ps6.jpg" class="image" style="margin: 15px 0;" /></center>
+   <div class="examples-wrapper"><div class="examples">
+    <p>Tom meets Sarah and they fall in love. They live together and plan their future. They want to buy their own house.</p>
+   </div></div>
+   </li>
+   <li>Kiedy wyrażamy uczucia, np.
+   <center><img src="./ps7.jpg" class="image" style="margin: 15px 0;" /></center>
+   <div class="examples-wrapper"><div class="examples">
+    <p>I love him. ► <strong>Kocham go.</strong></p>
+	<p>She hates dogs. ► <strong>Ona nienawidzi psów.</strong></p>
+   </div></div>
+   </li>
+</ol>
+<div id="main-title">
+<h1>Budowa zdania<h1>
+</div>
+<h2 style="margin-top: 20px;">✔️ Zdania twierdzące</h2>
+<p class="explain">Tworzenia zdań twierdzących w czasie Present Simple opiera się na zasadzie mówiącej, że w trzeciej osobie liczby pojedynczej <strong>(he, she, it)</strong> do czasownika dodajemy jedną z trzech końcówek: <strong>-s/-es/-ies.</strong><strong> W pozostałych osobach czasownik zapisujemy w jego podstawowej, niezmienionej formie.</strong>
+</p>
+<div class="scheme"><p><strong>Podmiot</strong><br> + <br><strong>czasownik w podstawowej formie</strong> + <i>(w trzeciej formie liczby pojedynczej końcówka -s/-es/-ies)</i><br> + <br><strong>dopełnienie</strong> <i>(reszta zdania)</i>.
+</p></div>
+<div class="examples-wrapper" style="margin-top: 30px"><div class="examples"><p>I live in London. ► <strong>Mieszkam w Londynie.</strong></p>
+<p>She live<strong>s</strong> in London. ► <strong>Ona mieszka w Londynie.</strong></p>
+<p>She stud<strong>ies</strong> medicine. ► <strong>Ona studiuje medycyne.</strong></p></div></div>
+<h2 style="margin-top: 20px;">Którą końcówkę wybrać?</h2>
+<ul style="margin-top: 20px;">
+<li>Dla czasowników zakończonych na: <strong>-ss, -sh, -x, -ch </strong>dodajemy końcówkę <strong>-es</strong>, np. wat<strong>ch</strong>-watch<strong>es</strong>, cat<strong>ch</strong>-catch<strong>es</strong>, fi<strong>x</strong>-fix<strong>es</strong>.</li>
+<li>W przypadku czasowników zakończonych na literę <strong>y</strong>, zamieniamy ją na końcówkę <strong>-ies</strong>, np: fl<strong>y</strong>-fl<strong>ies</strong>, stud<strong>y</strong>-stud<strong>ies</strong></li>
+<li>Powyższa zasada nie ma zastosowania dla czasowników, w których przed literą <strong>y</strong> stoi samogłoska, np. pl<strong><u>a</u>y</strong>. Wtedy do podstawowej formy dodajemy tylko i wyłącznie samo <strong>-s</strong>, tworząc wyraz play<strong>s</strong>.</li>
+<li>Do pozostałych czasowników dodajemy końcówkę <strong>-s</strong>.</li>
+</ul>
+   <div class="quiz-start" id="quiz-start-first"><h1 style="color: white;">Sprawdź się!</h1><p style="margin-top: 9px; color: white; font-size: 15px;">Jeśli poćwiczyć użycie powyższych reguł, kliknij w przycisk poniżej!</p><button style="height:50px; width: 150px; margin-top: 17px; border: none; border-radius: 12px; font-size: 14px; background-color: white;" onclick="startQuiz('Apu', 'quiz-start-first')">Rozpocznij quiz</button></div>
+   <form method="POST" style="display: none; opacity: 0; transition : all .3s;
+   -wekit-transition : all .3s;
+   -moz-transition : all .3s;" id="Apu">
+      <fieldset><h3><span class="qnum">1➤ </span>They always ...... (check) the weather forecast before going on holiday.</h3> <span>1 point</span><input type="radio" name="Aoption1" id="answer-1-1" required="required"><label for="answer-1-1" class="Aanswers ">checks</label><input type="radio" name="Aoption1" id="answer-1-2" required="required"><label for="answer-1-2" class="Aanswers Acorrect">check</label><input type="radio" name="Aoption1" id="answer-1-3" required="required"><label for="answer-1-3" class="Aanswers ">checkies</label><input type="radio" name="Aoption1" id="answer-1-4" required="required"><label for="answer-1-4" class="Aanswers ">checkes</label></fieldset><fieldset><h3><span class="qnum">2➤ </span>I .... (like) cats very much.</h3> <span>1 point</span><input type="radio" name="Aoption2" id="answer-2-1" required="required"><label for="answer-2-1" class="Aanswers Acorrect">like</label><input type="radio" name="Aoption2" id="answer-2-2" required="required"><label for="answer-2-2" class="Aanswers ">likes</label><input type="radio" name="Aoption2" id="answer-2-3" required="required"><label for="answer-2-3" class="Aanswers ">likies</label><input type="radio" name="Aoption2" id="answer-2-4" required="required"><label for="answer-2-4" class="Aanswers ">liks</label></fieldset><fieldset><h3><span class="qnum">3➤ </span>Josh ...... (study) Polish.</h3> <span>1 point</span><input type="radio" name="Aoption3" id="answer-3-1" required="required"><label for="answer-3-1" class="Aanswers ">studys</label><input type="radio" name="Aoption3" id="answer-3-2" required="required"><label for="answer-3-2" class="Aanswers ">study</label><input type="radio" name="Aoption3" id="answer-3-3" required="required"><label for="answer-3-3" class="Aanswers ">studes</label><input type="radio" name="Aoption3" id="answer-3-4" required="required"><label for="answer-3-4" class="Aanswers Acorrect">studies</label></fieldset><fieldset><h3><span class="qnum">4➤ </span>Our dog .... (love) swimming.</h3> <span>1 point</span><input type="radio" name="Aoption4" id="answer-4-1" required="required"><label for="answer-4-1" class="Aanswers ">love</label><input type="radio" name="Aoption4" id="answer-4-2" required="required"><label for="answer-4-2" class="Aanswers ">lovs</label><input type="radio" name="Aoption4" id="answer-4-3" required="required"><label for="answer-4-3" class="Aanswers Acorrect">loves</label><input type="radio" name="Aoption4" id="answer-4-4" required="required"><label for="answer-4-4" class="Aanswers ">lovees</label></fieldset><fieldset><h3><span class="qnum">5➤ </span>She ...... (watch) TV every day.</h3> <span>1 point</span><input type="radio" name="Aoption5" id="answer-5-1" required="required"><label for="answer-5-1" class="Aanswers Acorrect">watches</label><input type="radio" name="Aoption5" id="answer-5-2" required="required"><label for="answer-5-2" class="Aanswers ">watchs</label><input type="radio" name="Aoption5" id="answer-5-3" required="required"><label for="answer-5-3" class="Aanswers ">watch</label><input type="radio" name="Aoption5" id="answer-5-4" required="required"><label for="answer-5-4" class="Aanswers ">watchies</label></fieldset><fieldset><h3><span class="qnum">6➤ </span>My mother usually ..... (get up) at six.</h3> <span>1 point</span><input type="radio" name="Aoption6" id="answer-6-1" required="required"><label for="answer-6-1" class="Aanswers ">get up</label><input type="radio" name="Aoption6" id="answer-6-2" required="required"><label for="answer-6-2" class="Aanswers Acorrect">gets up</label><input type="radio" name="Aoption6" id="answer-6-3" required="required"><label for="answer-6-3" class="Aanswers ">getes up</label><input type="radio" name="Aoption6" id="answer-6-4" required="required"><label for="answer-6-4" class="Aanswers ">get ups</label></fieldset><fieldset><h3><span class="qnum">7➤ </span>I never .... (watch) football.</h3> <span>1 point</span><input type="radio" name="Aoption7" id="answer-7-1" required="required"><label for="answer-7-1" class="Aanswers ">watches</label><input type="radio" name="Aoption7" id="answer-7-2" required="required"><label for="answer-7-2" class="Aanswers Acorrect">watch</label><input type="radio" name="Aoption7" id="answer-7-3" required="required"><label for="answer-7-3" class="Aanswers ">watchees</label><input type="radio" name="Aoption7" id="answer-7-4" required="required"><label for="answer-7-4" class="Aanswers ">watchies</label></fieldset><fieldset><h3><span class="qnum">8➤ </span>We .... (go) shopping once a week.</h3> <span>1 point</span><input type="radio" name="Aoption8" id="answer-8-1" required="required"><label for="answer-8-1" class="Aanswers ">goes</label><input type="radio" name="Aoption8" id="answer-8-2" required="required"><label for="answer-8-2" class="Aanswers ">gos</label><input type="radio" name="Aoption8" id="answer-8-3" required="required"><label for="answer-8-3" class="Aanswers ">goies</label><input type="radio" name="Aoption8" id="answer-8-4" required="required"><label for="answer-8-4" class="Aanswers Acorrect">go</label></fieldset><fieldset><h3><span class="qnum">9➤ </span>She ..... (shower) every evening.</h3> <span>1 point</span><input type="radio" name="Aoption9" id="answer-9-1" required="required"><label for="answer-9-1" class="Aanswers ">showeries</label><input type="radio" name="Aoption9" id="answer-9-2" required="required"><label for="answer-9-2" class="Aanswers Acorrect">showers</label><input type="radio" name="Aoption9" id="answer-9-3" required="required"><label for="answer-9-3" class="Aanswers ">showeres</label><input type="radio" name="Aoption9" id="answer-9-4" required="required"><label for="answer-9-4" class="Aanswers ">shower</label></fieldset><fieldset><h3><span class="qnum">10➤ </span>I ..... (read) a few pages of my favorite book every day.</h3> <span>1 point</span><input type="radio" name="Aoption10" id="answer-10-1" required="required"><label for="answer-10-1" class="Aanswers Acorrect">read</label><input type="radio" name="Aoption10" id="answer-10-2" required="required"><label for="answer-10-2" class="Aanswers ">reads</label><input type="radio" name="Aoption10" id="answer-10-3" required="required"><label for="answer-10-3" class="Aanswers ">readies</label><input type="radio" name="Aoption10" id="answer-10-4" required="required"><label for="answer-10-4" class="Aanswers ">reades</label></fieldset>
+      <button type="submit">Submit</button><div class="Apuresult"><p>You Got <span class="score" data-question-count="10"></span></p></div></form>
+      <h2 style="margin-top: 20px;">❌ Zdania przeczące</h2>
+      <p class="explain">Aby stworzyć zdanie przeczące w czasie Present Simple, w zależności od osoby, przed podmiotem dodajemy operator <strong>don't</strong> lub <strong>doesn't</strong> <i>(drugiego z nich użyjemy tylko w przypadku III osoby liczby pojedynczej, czyli <strong>he, she, it</strong>).</i></strong>
+      </p>
+      <div class="scheme"><p><strong>Podmiot</strong><br> + <br><strong>operator don't</strong> lub <i>(w trzeciej formie liczby pojedynczej)<strong> doesn't</strong></i><br> + <br><strong>czasownik w podstawowej formie</strong><br> + <br><strong>dopełnienie</strong><i>(reszta zdania)</i></p></div>
+      <div class="examples-wrapper" style="margin-top: 30px"><div class="examples"><p>She <strong>doesn't</strong> watch TV. ► <strong> Ona nie ogląda telewizji.</strong></p><p>I <strong>don't</strong> like him. ► <strong> Nie lubię go.</strong></p></div></div>
+      <h2 style="margin-top: 20px;">❓ Pytania</h2>
+      <p class="explain">Konstrukcja pytań w czasie Present Simple również nie jest skomplikowana. Wystarczy, że w zależności od osoby przed podmiotem dodamy operator <strong>do</strong> lub <strong>does</strong> <i>(drugiego z nich użyjemy tylko w przypadku III osoby liczby pojedynczej, czyli <strong>he, she, it</strong>).</i></p>
+   </p>
+   <div class="scheme"><p><strong>Operator Do</strong> lub <i>(w trzeciej formie liczby pojedynczej)<strong> Does</strong></i><br> + <br><strong>Podmiot</strong><br> + <br><strong>czasownik w podstawowej formie</strong><br> + <br><strong>dopełnienie</strong><i>(reszta zdania)</i></p></div>
+   <div class="examples-wrapper" style="margin-top: 30px"><div class="examples"><p><strong>Do</strong> you watch TV? ► <strong>Oglądasz telewizję?</strong></p><p><strong>Does</strong> she watch TV? ► <strong>Czy ona ogląda telewizję?</strong></p></div></div>
+   <h2 style="margin-top: 20px;">Pytania szczegółowe</h2>
+   <p class="explain">W przypadku, w którym chcielibyśmy doprecyzować nasze pytanie używając słów takich jak: <strong>when</strong> - kiedy, <strong>where</strong> - gdzie, <strong>why</strong> - dlaczego, <strong>what</strong> - co, <strong>how</strong> - jak, musimy umiejscowić je na samym początku zdania.</p>
+   <div class="examples-wrapper" style="margin-top: 30px"><div class="examples"><p><strong>How </strong>many books do you have? ► <strong>Ile masz książek?</strong></p><p><strong>Where</strong> does she work? ► <strong>Gdzie ona pracuje?</strong></p></div></div>
+   <h2 style="margin-top: 20px;">Pytania o podmiot</h2>   
+   <p class="explain">Jeśli chcemy zapytać się o podmiot, to struktura takiego zdania całkowicie zmienia swoją formę. Przypomina ona nieco zdanie twierdzące, z tym wyjątkiem, że nie uwzględniamy tu podmiotu.</p>
+   <div class="scheme"><p><strong>Wyraz pytający </strong><i>(who - kto, what - co, which - który lub whose - czyj)</i><br> + <br><strong>Czasownik z końcówką -s/-es/-ies</strong></i><br> + <br><strong>dopełnienie</strong><i>(reszta zdania)</i></p></div>
+   <div class="examples-wrapper" style="margin-top: 30px"><div class="examples"><p><strong>Who</strong> lik<strong>es</strong> oranges? ► <strong>Kto lubi pomarańcze?</strong></p><p><strong>What</strong> mak<strong>es</strong> you happy? ► <strong>Co cię uszczęśliwia?</strong></p></div></div>
+   <div class="quiz-start" style="margin-top: 20px;" id="quiz-start-second"><h1 style="color: white;">Sprawdź się!</h1><p style="margin-top: 9px; color: white; font-size: 15px;">Jeśli poćwiczyć użycie powyższych reguł, kliknij w przycisk poniżej!</p><button style="height:50px; width: 150px; margin-top: 17px; border: none; border-radius: 12px; font-size: 14px; background-color: white;" onclick="startQuiz('Apu2', 'quiz-start-second')">Rozpocznij quiz</button></div>
+
+   <form method="POST" style="display: none; opacity: 0; transition : all .3s;
+   -wekit-transition : all .3s;
+   -moz-transition : all .3s;" id="Apu2">
+      <fieldset><h3><span class="qnum">1➤ </span>Wybierz poprawnie zapisane zdanie.</h3> <span>1 point</span><input type="radio" name="Aoption1" id="aanswer-1-1" required="required"><label for="aanswer-1-1" class="Aaanswers ">She don't like books.</label><input type="radio" name="Aoption1" id="aanswer-1-2" required="required"><label for="aanswer-1-2" class="Aaanswers Acorrect">He doesn't smoke.</label><input type="radio" name="Aoption1" id="aanswer-1-3" required="required"><label for="aanswer-1-3" class="Aaanswers ">I don't wears glasses.</label><input type="radio" name="Aoption1" id="aanswer-1-4" required="required"><label for="aanswer-1-4" class="Aaanswers ">Mike don't rides a bike very often.</label></fieldset><fieldset><h3><span class="qnum">2➤ </span>Wybierz poprawnie zapisane zdanie.</h3> <span>1 point</span><input type="radio" name="Aoption2" id="aanswer-2-1" required="required"><label for="aanswer-2-1" class="Aaanswers ">Tom don't run very fast.</label><input type="radio" name="Aoption2" id="aanswer-2-2" required="required"><label for="aanswer-2-2" class="Aaanswers ">She doesn't dances well.</label><input type="radio" name="Aoption2" id="aanswer-2-3" required="required"><label for="aanswer-2-3" class="Aaanswers Acorrect">They ride a bike on Saturdays.</label><input type="radio" name="Aoption2" id="aanswer-2-4" required="required"><label for="aanswer-2-4" class="Aaanswers ">We sings very loud.</label></fieldset><fieldset><h3><span class="qnum">3➤ </span>Wybierz poprawnie zapisane zdanie.</h3> <span>1 point</span><input type="radio" name="Aoption3" id="aanswer-3-1" required="required"><label for="aanswer-3-1" class="Aaanswers ">Who live here?</label><input type="radio" name="Aoption3" id="aanswer-3-2" required="required"><label for="aanswer-3-2" class="Aaanswers ">Who does know the truth?</label><input type="radio" name="Aoption3" id="aanswer-3-3" required="required"><label for="aanswer-3-3" class="Aaanswers Acorrect">What makes you so happy?</label><input type="radio" name="Aoption3" id="aanswer-3-4" required="required"><label for="aanswer-3-4" class="Aaanswers ">What bring you here?</label></fieldset><fieldset><h3><span class="qnum">4➤ </span>Wybierz poprawnie zapisane zdanie.</h3> <span>1 point</span><input type="radio" name="Aoption4" id="aanswer-4-1" required="required"><label for="aanswer-4-1" class="Aaanswers Acorrect">Do you never eat meat?</label><input type="radio" name="Aoption4" id="aanswer-4-2" required="required"><label for="aanswer-4-2" class="Aaanswers ">Does you like English?</label><input type="radio" name="Aoption4" id="aanswer-4-3" required="required"><label for="aanswer-4-3" class="Aaanswers ">Do he like apples?</label><input type="radio" name="Aoption4" id="aanswer-4-4" required="required"><label for="aanswer-4-4" class="Aaanswers ">Do they always talks so loud?</label></fieldset><fieldset><h3><span class="qnum">5➤ </span>Wybierz poprawnie zapisane zdanie.</h3> <span>1 point</span><input type="radio" name="Aoption5" id="aanswer-5-1" required="required"><label for="aanswer-5-1" class="Aaanswers ">What does you want for Christmas?</label><input type="radio" name="Aoption5" id="aanswer-5-2" required="required"><label for="aanswer-5-2" class="Aaanswers ">What does it means?</label><input type="radio" name="Aoption5" id="aanswer-5-3" required="required"><label for="aanswer-5-3" class="Aaanswers Acorrect">Where do you live?</label><input type="radio" name="Aoption5" id="aanswer-5-4" required="required"><label for="aanswer-5-4" class="Aaanswers ">Do what you usually do on holiday?</label></fieldset><fieldset><h3><span class="qnum">6➤ </span>Wybierz poprawnie zapisane zdanie.</h3> <span>1 point</span><input type="radio" name="Aoption6" id="aanswer-6-1" required="required"><label for="aanswer-6-1" class="Aaanswers">Does she lives here?</label><input type="radio" name="Aoption6" id="aanswer-6-2" required="required"><label for="aanswer-6-2" class="Aaanswers ">Do you often plays video games?</label><input type="radio" name="Aoption6" id="aanswer-6-3" required="required"><label for="aanswer-6-3" class="Aaanswers ">Does you get up at 8 o'clock every day?</label><input type="radio" name="Aoption6" id="aanswer-6-4" required="required"><label for="aanswer-6-4" class="Aaanswers Acorrect">Do we like them?</label></fieldset>
+      <button type="submit">Submit</button><div class="Apu2result"><p>You Got <span class="score" data-question-count="6"></span></p></div></form>
+   <div id="main-title">
+      <h1>Czasownik "to be"<h1>
+   </div>
+   <center><img src="./ps7.png" class="image" style="width: 100%;"/></center>
+   <p class="explain">"Być czy nie być? - oto jest pytanie". Jeśli kojarzysz kultową scenę z filmu "Dzień Świra", to prawdopodobnie wiesz już czego dotyczyć będzie ta część lekcji. Zatem "może powtórzymy angielski?" 🙂</p><p>Po pierwsze, zdania z czasownikiem "to be" w czasie Present Simple tworzymy w zupełnie inny sposób niż dotychczas poznałeś. Jako jedyny odmienia się on przez osoby i przekształca się w trzy różne formy:</p>   </p>
+   <div class="scheme"><p>I am  ► I'm<br>You are  ► You're<br>He, She, It is  ► He's, She's, It's</p></div>
+   <div class="scheme"><p>We are  ► We're<br>You are ► You're<br>They are  ► They're</p></div>
+
+   <h2 style="margin-top: 20px;">✔️ Zdania twierdzące</h2>
+   <div class="examples-wrapper" style="margin-top: 30px"><div class="examples"><p><strong>I'm</strong> always busy on Mondays. ► <strong>Jestem zawsze zajęty w poniedziałki.</strong></p><p><strong>She is</strong> never tired. ► <strong>Ona nigdy nie jest zmęczona</strong></p></div></div>
+   <p class="explain">Możemy zauważyć, że czasownik “to be” w pierwszej osobie liczby pojedynczej <i>(I - ja)</i> zawsze przyjmuje formę <strong>am</strong>, trzeciej osobie liczby pojedynczej <i>(he, she, it)</i> - <strong>is</strong>, a w pozostałych przypadkach zamienia się w <strong>are</strong>. 
+   </p>
+   <h2 style="margin-top: 20px;">❌ Zdania przeczące</h2>
+   <p class="explain">Zdania przeczące z czasownikiem “być” w czasie Present Simple tworzymy poprzez dodanie przeczenia <strong>not</strong> do określonej formy <strong>am, is lub are.</strong></p> 
+   </p>
+   <div class="examples-wrapper" style="margin-top: 30px"><div class="examples"><p><strong>I'm not</strong> tired ► <strong>Nie jestem zmęczony.</strong></p><p>She <strong>is not</strong> hungry. ► <strong>Ona nie jest głodna.</strong></p></div></div>
+   <h2 style="margin-top: 20px;">❓ Pytania</h2>
+   <p class="explain">Tworzenie pytań z czasownikiem “to be” jest banalnie proste. W tym celu wystarczy zamienić kolejnością osobę z formą czasownika.
+   </p> 
+   <div class="examples-wrapper" style="margin-top: 30px"><div class="examples"><p><strong>Are you</strong> friends? ► <strong>Jesteście przyjaciółmi?</strong></p><p><strong>Is she</strong> clever? ► <strong>Czy ona jest mądra?</strong></p></div></div>
+   <div id="main-title">
+      <h1>Słówka charakterystyczne<h1>
+   </div>
+   <p class="explain">Dla czasu Present Simple bardzo charakterystycznym jest użycie słówek określających częstotliwość wykonywania czynności, np.
+   </p>
+   <ul style="margin-top: 25px;">
+      <li>always - <strong>zawsze</strong></li>
+      <li>never - <strong>nigdy</strong></li>
+      <li>often - <strong>często</strong></li>
+      <li>seldom -<strong>rzadko</strong></li>
+      <li>usually - <strong>zazwyczaj</strong></li>
+      <li>every month - <strong>każdego miesiąca</strong></li>
+      <li>every day - <strong>każdego dnia</strong></li>
+      <li>three times a day - <strong>trzy razy dziennie</strong></li>
+      <li>sometimes - <strong>czasem</strong></li>
+      <li>on Wednesday/Sunday -<strong>W środę/w niedzielę</strong></li>
+   </ul>
+</body>
+</html>
