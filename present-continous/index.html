@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial_scale=1">
+<script>
+   function startQuiz(id, element){
+      document.getElementById(element).style.opacity = '0';
+      window.setTimeout(
+      function removethis(){
+         document.getElementById(element).style.display='none';
+         document.getElementById(id).style.display='block';
+         window.setTimeout(
+            function second(){
+         document.getElementById(id).style.opacity = '1';
+      }, 100);
+      }, 300);
+      
+   }
+   </script>
+</script>
+</head>
+<bodyy>
+<style>
+body{
+    padding: 30px;
+}
+#Apu>fieldset { border:1px solid #000000; border-radius:5px; margin:1rem auto;padding:7px 4px;background-color:#e9edf5; width:100%; }.qnum{color:#ff0000;} #Apu>fieldset>h3{ margin:0px; margin-bottom:17px; margin-top:6px; font-size:15px; display:inline-block; max-width:80%!important; padding:5px; color:#000000;} #Apu>fieldset>span{ float:right; margin:0px; padding:0; font-size:10px; } .Aanswers { background-color: #cccccc;color:#000000;border:1px solid #0000ff;border-radius:4px; display: block; position: relative; cursor: pointer; padding: 0.55rem 1.05rem; margin: 0.25rem 0.5rem; max-width:99%; } #Apu input[type="radio"],#Apu>button { display: none; } :valid .Acorrect { background-color: rgba(61, 181, 64, 0.6) } :checked + .Aanswers { color: #ffffff; background-color: #c70000 } :checked + .Acorrect { background-color: #3db540; } :valid { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none } :valid + .Aanswers { pointer-events: none } #Apu{ counter-reset: quiz-score } :checked + .Acorrect { counter-increment: quiz-score } .score:after { content: counter(quiz-score) " Points Out Of " attr(data-question-count) "  !"} #Apu .Apuresult { display: none; } #Apu:valid .Apuresult { display: block;color:#0000ff;font-size:22px;margin-top:8px;text-align:center;}
+.quiz-start{ opacity: 1; transition: all .3s;
+  -wekit-transition: all .3s;
+  -moz-transition: all .3s; padding: 30px; text-align: center; height: 220px; width: 100%; background: rgb(175,84,255);
+background: linear-gradient(90deg, rgba(175,84,255,1) 0%, rgba(120,30,255,1) 100%); border-radius: 15px; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+#Apu2>fieldset { border:1px solid #000000; border-radius:5px; margin:1rem auto;padding:7px 4px;background-color:#e9edf5; width:100%; }.qnum{color:#ff0000;} #Apu2>fieldset>h3{ margin:0px; margin-bottom:17px; margin-top:6px; font-size:15px; display:inline-block; max-width:80%!important; padding:5px; color:#000000;} #Apu2>fieldset>span{ float:right; margin:0px; padding:0; font-size:10px; } .Aaanswers { background-color: #cccccc;color:#000000;border:1px solid #0000ff;border-radius:4px; display: block; position: relative; cursor: pointer; padding: 0.55rem 1.05rem; margin: 0.25rem 0.5rem; max-width:99%; } #Apu2 input[type="radio"],#Apu2>button { display: none; } :valid .Acorrect { background-color: rgba(61, 181, 64, 0.6) } :checked + .Aaanswers { color: #ffffff; background-color: #c70000 } :checked + .Acorrect { background-color: #3db540; } :valid { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none } :valid + .Aaanswers { pointer-events: none } #Apu2{ counter-reset: quiz-score } :checked + .Acorrect { counter-increment: quiz-score } .score:after { content: counter(quiz-score) " Points Out Of " attr(data-question-count) "  !"} #Apu2 .Apu2result { display: none; } #Apu2:valid .Apu2result { display: block;color:#0000ff;font-size:22px;margin-top:8px;text-align:center;}
+</style>
+
+<center><img src="./ps.png" class="image" style="width: 100%"/></center>
+<div id="main-title">
+<h1>Present Continuous<h1>
+</div>
+<p class="explain">jest drugim z kolei czasem teraźniejszym, który poznajemy podczas nauki języka angielskiego. Służy on głównie do opisywania czynności wykonywanych w danej chwili, choć jego zastosowanie może w niektórych przypadkach wykraczać w przyszłość, a nawet przeszłość. </p>
+<h2>Zatem kiedy go używamy?</h2>
+<ol type="1">
+   <li>Opisywanie czynności, które dzieją się w momencie, w którym o nich mówimy, np.
+   <center><img src="./ps2.jpg" class="image" style="margin: 15px 0;"/></center>
+   <div class="examples-wrapper">
+	   <div class="examples">
+		 <p>He is driving a car. ► <strong>On prowadzi auto (teraz)</strong></p>
+		 <p>Tom is drinking water.  ► <strong>Tom pije wodę (teraz)</strong></p>
+	   </div>
+   </div></li>
+   <li>Opisywanie czynności, które zaczęły się wcześniej i trwają dalej włączając w to chwilę obecną, np.
+	<center><img src="./ps3.jpg" class="image" style="margin: 15px 0;"/></center>
+	<div class="examples-wrapper"><div class="examples">
+     <p>He is building a new house. ► <strong>On buduje nowy dom</strong> <i>(nie musi w tym momencie układać cegieł)</i>.</p>
+     <p>She is studying for her exams. ► <strong>Ona uczy się do swoich egzaminów 
+   </strong> <i>(nie musi siedzieć nad książkami akurat w tej chwili)</i>.</p>
+	</div></div>
+   </li>
+   <li>Wyrażanie naszych planów, np.
+   <center><img src="./ps4.jpg" class="image" style="margin: 15px 0;" /></center>
+   <div class="examples-wrapper"><div class="examples">
+    <p>I’m having a date with Tom next Sunday. ► <strong>Mam randkę z Tomem w następna sobotę.</strong>
+   </p>
+    <p>I’m climbing Mount Everest tomorrow. ► <strong>Jutro wspinam się na Mount Everest.</strong>
+   </p>
+   </div></div>
+   </li>
+   <li>Wyrażamy czynność powtarzającą się, która nie jest stałą cechą człowieka/przedmiotu, np.
+   <center><img src="./ps5.jpg" class="image" style="margin: 15px 0;" /></center>
+   <div class="examples-wrapper"><div class="examples">
+    <p>He’s being so loud today! ► <strong> On jest dziś taki głośny (normalnie nie jest).</strong>
+   </p>
+    <p>You are making the same mistakes again today. ► <strong>Ciągle robisz dziś te same błędy.</strong>
+    </p>
+   </div></div>
+   </li>
+</ol>
+<div id="main-title">
+<h1>Budowa zdania<h1>
+</div>
+<h2 style="margin-top: 20px;">✔️ Zdania twierdzące</h2>
+<p class="explain">Do utworzenia zdania twierdzącego w czasie Present Continuous, w pierwszej kolejności potrzebować będziemy odpowiedniej formy "to be". Następnie do czasownika dodamy końcówkę <strong>-ing.</strong>
+</p>
+<div class="scheme"><p><strong>Podmiot</strong><br> + <br><strong>odmieniony czasownik “to be” </strong><i>(am, is, are)</i><br> + <br><strong>czasownik</strong> + <strong>-ing</strong><br>+<br><strong>dopełnienie</strong> <i>(reszta zdania)</i>.
+</p></div>
+<h2 style="margin-top: 20px;">Odmiana czasownika “to be”.</h2>
+<p class="explain">Poniżej znajduje się przypomnienie odmiany czasownika “to be”, której uczyłeś się już wcześniej przy okazji poznawania czasu Present Simple.</p>
+
+<div class="scheme"><p>I am  ► I'm<br>You are  ► You're<br>He, She, It is  ► He's, She's, It's</p></div>
+   <div class="scheme"><p>We are  ► We're<br>You are ► You're<br>They are  ► They're</p></div>
+<div class="examples-wrapper" style="margin-top: 30px"><div class="examples">
+<p>I am wait<strong>ing</strong> for a taxi. ► <strong>Czekam na taksówkę</strong><i> (w tym momencie).</i></p>
+<p>You are eat<strong>ing</strong> breakfast. ► <strong>Ty jesz śniadanie</strong><i> (w tym momencie).</i></p>
+<p>She is talk<strong>ing</strong> to Ben ► <strong>Ona rozmawia z Benem</strong><i> (w tym momencie).</i></p>
+</div></div>
+
+      <h2 style="margin-top: 20px;">❌ Zdania przeczące</h2>
+      <p class="explain">Tworzenie zdań przeczących w czasie Present Continuous również nie jest żadną czarną magią. Wystarczy, że do czasownika <strong>“to be”</strong> dodasz przeczenie <strong>“not”</strong>.</p>
+      </p>
+      <div class="scheme"><p><strong>Podmiot</strong><br> + <br><strong>odmieniony czasownik “to be” </strong><i>(am, is, are)</i><br> + <br><strong>not</strong><br> + <br><strong>czasownik</strong> + <strong>-ing</strong><br>+<br><strong>dopełnienie</strong> <i>(reszta zdania).</i></div>
+         <div class="examples-wrapper" style="margin-top: 30px"><div class="examples"><p>I am <strong>not</strong> waiting for a taxi. ► <strong> Nie czekam na taksówkę.</strong></p><p>You're <strong>not</strong> eating breakfast ► <strong> Nie jesz śniadania.</strong></p></div></div>
+      <h2 style="margin-top: 20px;">❓ Pytania</h2>
+      <p class="explain">Tworzenie pytań w czasie Present Simple polega na odwróceniu kolejności występowania w zdaniu podmiotu z czasownikiem “to be”.</p>
+   </p>
+   <div class="scheme"><p><strong>Odmieniony czasownik “to be” </strong><i>(am, is, are)</i><br> + <br><strong>podmiot</strong><br> +  <br><strong>czasownik</strong> + <strong>-ing</strong><br>+<br><strong>dopełnienie</strong> <i>(reszta zdania).</i></p></div>
+      <div class="examples-wrapper" style="margin-top: 30px"><div class="examples"><p><strong>Is he </strong> talking to Ben? ► <strong>Czy on rozmawia z Benem?</strong><i> (teraz)</i></p><p><strong>Are you</strong> eating breakfast? ► <strong>Czy jesz śniadanie?</strong></p></div></div>
+      <h2 style="margin-top: 20px;">Wyjątki</h2>
+      <p class="explain">Niektóre czasowniki w czasie Present Continuous, po dodaniu do nich końcówki -ing zmieniają nieco swoją formę:</p>
+      <ul style="margin-top: 20px;">
+      <li>Jeśli czasownik kończy się na literę <strong>e</strong>, to w takim przypadku pomijamy jej zapis, a zamiast tego doklejamy do niego końcówkę <strong>-ing</strong>, np. mak<strong>e</strong>-mak<strong>ing</strong>, tak<strong>e</strong>-tak<strong>ing</strong>, writ<strong>e</strong>-writ<strong>ing</strong>.</li>
+      <li>Jeśli czasownik jest <strong>jednosylabowy</strong> oraz jego trzy ostatnie litery to kolejno: <strong>spółgłoska, samogłoska, spółgłoska</strong>, wtedy podwajamy jegoostatnią spółgłoskę <i>(nie dotyczy spółgłosek w i x)</i>, np. <strong>sit</strong>-sit<strong>ting</strong>, <strong>run</strong>-run<strong>ning</strong>, s<strong>wim</strong>-swim<strong>ming</strong>.</li>
+      <li>W czasownikach <strong>dwusylabowych</strong>, gdy trzy jego ostatnie litery to kolejno: <strong>spółgłoska, samogłoska, spółgłoska</strong>, a akcent pada na <strong>drugą sylabę</strong>, podwajamy ostatnią spółgłoskę, np. re<strong>fer</strong>-refer<strong>ring</strong>, be<strong>gin</strong>-begin<strong>ning</strong>.</li>
+      <p class="explain">Przykładem, w którym akcent pada na pierwszą sylabę jest dwusylabowy wyraz <strong>happen</strong>. Mimo, że występuje w nim zasada spółgłoska-samogłoska-spółgłoska, to nie podwajamy ostatniej spółgłoski, przez co jego końcowa forma będzie brzmiała następująco: happe<strong>n</strong>ing.
+      </p>
+
+      <li>W czasownikach kończących się na <strong>-ie</strong>, zmieniamy je na -y, np. d<strong>ie</strong>-d<strong>ying</strong>, t<strong>ie</strong>-t<strong>ying</strong>, l<strong>ie</strong>-l<strong>ying</strong>.</li>
+      </ul>
+
+   <div id="main-title">
+      <h1>Słówka charakterystyczne<h1>
+   </div>
+   <ul style="margin-top: 25px;">
+      <li>now - <strong>teraz</strong></li>
+      <li>at the moment - <strong>w tym momencie</strong></li>
+      <li>at present - <strong>obecnie</strong></li>
+      <li>nowadays -<strong>w obecnych czasach</strong></li>
+      <li>these days - <strong>w tych dniach, aktualnie</strong></li>
+      <li>today - <strong>dziś</strong></li>
+      <li>tonight - <strong>tej nocy</strong></li>
+   </ul>
+</body>
+</html>
