@@ -2,6 +2,7 @@
 <html>
 <head>
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link rel="stylesheet" href="styles.css">
 <meta name="viewport" content="width=device-width, initial_scale=1">
 <script>
    function startQuiz(id, element){
@@ -22,50 +23,7 @@
 </head>
 <bodyy>
 <style>
-#main-title{
-margin-top: 20px;
-border-left: 2px solid #000000;
-}
-#main-title:not(:first-child){
-   margin-top: 40px;
-   margin-bottom: 20px;
-}
-#main-title h1{
-margin-left: 20px;
-}
-body{
-padding: 30px;
-}
-*{padding: 0; margin: 0; box-sizing: border-box; font-family: "Montserrat", sans-serif; line-height: 1.7;
-}
-h1{
-font-size: 25px;
-}
-h2{
-font-size: 18px;
-}
-.image{
-   width: 90%; border-radius: 10px;
-}
-.examples-wrapper{
-  padding: 1rem;
-  position: relative;
-  background: linear-gradient(to right, #dd00fe, #8401ff);
-  padding: 1px;
-  border-radius: 5px;
-}
-.explain{margin: 15px 0;}
-ol{margin: 12px 0; list-style: inside;}
-ul{list-style: inside;}
-li:not(:first-child){margin: 25px 0;}
-.examples{background-color: white; padding: 10px; border: 0.5px solid gray; border-radius: 5px;}
-.examples p{margin: 7px 0;}
-.scheme{ border-radius: 10px; padding: 20px; text-align: center; margin-top: 30px; box-shadow: 10px 10px 48px 0px rgba(0,0,0,0.15);
--webkit-box-shadow: 10px 10px 48px 0px rgba(0,0,0,0.15);
--moz-box-shadow: 10px 10px 48px 0px rgba(0,0,0,0.15);}
-.scheme p{
-font-size: 17px;
-}
+
 #Apu>fieldset { border:1px solid #000000; border-radius:5px; margin:1rem auto;padding:7px 4px;background-color:#e9edf5; width:100%; }.qnum{color:#ff0000;} #Apu>fieldset>h3{ margin:0px; margin-bottom:17px; margin-top:6px; font-size:15px; display:inline-block; max-width:80%!important; padding:5px; color:#000000;} #Apu>fieldset>span{ float:right; margin:0px; padding:0; font-size:10px; } .Aanswers { background-color: #cccccc;color:#000000;border:1px solid #0000ff;border-radius:4px; display: block; position: relative; cursor: pointer; padding: 0.55rem 1.05rem; margin: 0.25rem 0.5rem; max-width:99%; } #Apu input[type="radio"],#Apu>button { display: none; } :valid .Acorrect { background-color: rgba(61, 181, 64, 0.6) } :checked + .Aanswers { color: #ffffff; background-color: #c70000 } :checked + .Acorrect { background-color: #3db540; } :valid { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none } :valid + .Aanswers { pointer-events: none } #Apu{ counter-reset: quiz-score } :checked + .Acorrect { counter-increment: quiz-score } .score:after { content: counter(quiz-score) " Points Out Of " attr(data-question-count) "  !"} #Apu .Apuresult { display: none; } #Apu:valid .Apuresult { display: block;color:#0000ff;font-size:22px;margin-top:8px;text-align:center;}
 .quiz-start{ opacity: 1; transition: all .3s;
   -wekit-transition: all .3s;
