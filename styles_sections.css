@@ -1,0 +1,42 @@
+
+    #main-title{
+      border-left: 2px solid #000000;
+       margin-top: 40px;
+       margin-bottom: 20px;
+    }
+    #main-title h1{
+    margin-left: 20px;
+    }
+    body{
+    padding: 0 30px;
+    }
+    *{padding: 0; margin: 0; box-sizing: border-box; font-family: "Montserrat", sans-serif; line-height: 1.7;
+    }
+    h1{
+    font-size: 25px;
+    }
+    h2{
+    font-size: 18px;
+    }
+    .image{
+       width: 90%; border-radius: 10px;
+    }
+    .examples-wrapper{
+      padding: 1rem;
+      position: relative;
+      background: linear-gradient(to right, #dd00fe, #8401ff);
+      padding: 1px;
+      border-radius: 5px;
+    }
+    .explain{margin: 15px 0;}
+    ol{margin: 12px 0; list-style: inside;}
+    ul{list-style: inside;}
+    li:not(:first-child){margin: 25px 0;}
+    .examples{background-color: white; padding: 10px; border: 0.5px solid gray; border-radius: 5px;}
+    .examples p{margin: 7px 0;}
+    .scheme{ border-radius: 10px; padding: 20px; text-align: center; margin-top: 30px; box-shadow: 10px 10px 48px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 10px 10px 48px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 10px 10px 48px 0px rgba(0,0,0,0.15);}
+    .scheme p{
+    font-size: 17px;
+    }
